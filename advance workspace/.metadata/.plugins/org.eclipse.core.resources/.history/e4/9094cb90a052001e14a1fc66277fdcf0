@@ -1,0 +1,73 @@
+package in.co.rays.util;
+
+
+
+/**
+ * This Class validate input data
+ * 
+ * @author paras mahajan
+ *
+ */
+public class DataValidator {
+
+	/**
+     * Checks if value is Null
+     *
+     * @param val
+     * @return
+     */
+	public static boolean isNull(String val) {
+		if (val == null || val.trim().length() == 0) {
+			 return true;
+		}else {
+			return false;
+		}
+	}
+	  /**
+     * Checks if value is NOT Null
+     *
+     * @param val
+     * @return
+     */
+	public static boolean isNotNull(String val) {
+		return !isNull(val);
+		
+	}
+	  /**
+     * Checks if value is an Integer
+     *
+     * @param val
+     * @return
+     */
+	public static boolean isIntejer(String val) {
+		if(isNotNull(val)) {
+			try {
+				int i =	Integer.parseInt(val);
+				return true;
+			
+			} catch (Exception e) {
+				return false;
+		 }
+      }else {
+    	  return false;
+      }
+		
+    }
+	  /**
+     * Checks if value is Long
+     *
+     * @param val
+     * @return
+     */
+	public static boolean isLong(String val) {
+		if(isNotNull(val)) {
+			try {
+				
+		long i = Long.parseLong(val);
+			return true;
+		}
+		return false;
+		
+	}
+
+}

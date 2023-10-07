@@ -1,0 +1,14 @@
+package in.co.rays.util;
+
+
+
+/**
+ * This Class validate input data
+ * 
+ * @author paras mahajan
+ *
+ */
+public class DataValidator {
+	
+
+}

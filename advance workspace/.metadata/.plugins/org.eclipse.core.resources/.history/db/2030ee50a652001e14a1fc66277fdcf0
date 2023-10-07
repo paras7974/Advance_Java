@@ -1,0 +1,17 @@
+package in.co.rays.util;
+
+
+/**
+ * @author paras mahjan
+ *
+ */
+public class EmailBuider {
+	
+	
+	/**
+     * Returns Successful User Registration Message
+   
+     */
+	
+
+}

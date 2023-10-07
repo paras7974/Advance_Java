@@ -1,0 +1,70 @@
+package in.co.rays.util;
+
+import java.text.SimpleDateFormat;
+
+
+/**
+	 * Data Utility class to format data from one format to another
+	 *
+	 * @author Paras Mahajan
+	 */
+	public class DataUtility {
+		
+		 /**
+	     * Application Date Format
+	     */
+		
+		public static final String APP_DATE_FORMATE ="MM/dd/yyyy";
+		
+		public static final String APP_TIME_FORMATE ="HH:mm:ss";
+		
+	/**
+	 * Date Formatter	
+	 */
+		
+		private static final SimpleDateFormat formatter = new SimpleDateFormat(APP_DATE_FORMATE);
+		
+		private static final SimpleDateFormat timeFormatter = new SimpleDateFormat(APP_TIME_FORMATE);
+		
+		  /**
+	     * Trims and trailing and leading spaces of a String
+	     *
+	     * @param val
+	     * @return
+	     */
+		public static String getString(String val) {
+			if (Datavalidator.isNotNull(val)) {
+				return val.trim();
+			}else {
+				return "";
+			}
+			
+			
+		}
+		 /**
+	     * Converts and Object to String
+	     *
+	     * @param val
+	     * @return
+	     */
+		public static String getStringData(Object val) {
+			if(val != null) {
+				return val.toString();
+			}else {
+				return "";
+			}
+		}
+		  /**
+	     * Converts String into Integer
+	     *
+	     * @param val
+	     * @return
+	     */
+	
+       public static int getInt(String va) {
+    	   if(Datavalidator.isInterjer(val))
+		return 0;
+    	   
+       }	   
+       }
+       

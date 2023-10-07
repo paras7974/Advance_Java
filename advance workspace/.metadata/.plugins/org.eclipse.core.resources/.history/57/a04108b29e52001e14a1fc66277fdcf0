@@ -1,0 +1,25 @@
+package in.co.rays.util;
+
+
+
+/**
+ * This Class validate input data
+ * 
+ * @author paras mahajan
+ *
+ */
+public class DataValidator {
+
+	/**
+     * Checks if value is Null
+     *
+     * @param val
+     * @return
+     */
+	public class static boolean isNull(String val) {
+		if (val == null || val.trim().length() == 0) {
+			
+		}
+	}
+
+}

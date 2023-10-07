@@ -1,0 +1,26 @@
+package in.co.rays.util;
+
+
+	
+	/**
+	 * Data Utility class to format data from one format to another
+	 *
+	 * @author Paras Mahajan
+	 */
+	/**
+	 * @author paras mahajan
+	 *
+	 */
+	public class DataUtility {
+		
+		 /**
+	     * Application Date Format
+	     */
+		
+		public static final String APP_DATE_FORMATE ="MM/dd/yyyy";
+		
+		public static final String APP_TIME_FORMATE ="HH:mm:ss";
+		
+		
+	}
+

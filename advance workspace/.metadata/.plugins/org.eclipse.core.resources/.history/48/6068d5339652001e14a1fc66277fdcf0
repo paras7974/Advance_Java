@@ -1,0 +1,47 @@
+package in.co.rays.util;
+
+import java.text.SimpleDateFormat;
+
+import com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator;
+
+/**
+	 * Data Utility class to format data from one format to another
+	 *
+	 * @author Paras Mahajan
+	 */
+	public class DataUtility {
+		
+		 /**
+	     * Application Date Format
+	     */
+		
+		public static final String APP_DATE_FORMATE ="MM/dd/yyyy";
+		
+		public static final String APP_TIME_FORMATE ="HH:mm:ss";
+		
+	/**
+	 * Date Formatter	
+	 */
+		
+		private static final SimpleDateFormat formatter = new SimpleDateFormat(APP_DATE_FORMATE);
+		
+		private static final SimpleDateFormat timeFormatter = new SimpleDateFormat(APP_TIME_FORMATE);
+		
+		  /**
+	     * Trims and trailing and leading spaces of a String
+	     *
+	     * @param val
+	     * @return
+	     */
+		public static String getString(String val) {
+			if (Datavalidator isNotNull(val)) {
+				return val.trim();
+			}else {
+				return "";
+			}
+			
+			
+		}
+		
+	}
+
